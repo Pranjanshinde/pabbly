@@ -10,7 +10,7 @@ const Auth = (req,res,next)=>{
                 console.log(decoded) // bar
                 if(decoded)
                 {
-                    req.body.user_id=decoded.userid;
+                    // req.body.user_id=decoded.userid;
                     next();
                 }
               });
