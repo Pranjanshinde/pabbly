@@ -3,11 +3,11 @@ var jwt = require('jsonwebtoken');
 const Auth = (req,res,next)=>{
     try {
         const token=req.headers.authorization;
-        console.log(token);
+        // console.log(token);
         if(token)
         {
             jwt.verify(token, 'masai', function(err, decoded) {
-                console.log(decoded) // bar
+                // console.log(decoded) // bar
                 if(decoded)
                 {
                     // req.body.user_id=decoded.userid;
